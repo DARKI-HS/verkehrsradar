@@ -1,18 +1,14 @@
-# VerkehrsRadar Deutschland – Version 5
+# VerkehrsRadar Deutschland V7 – Symbol-Reparatur
 
-## Änderungen
-- Karte dauerhaft oben sichtbar, Meldungen in eigenem Scrollbereich darunter.
-- Button „⚙ Einstellungen“ öffnet alle Einstellungen separat.
-- Roter Rahmen: anhand ausdrücklich genannter Beginn-/Enddaten aktuell.
-- Gelber Rahmen: ausdrücklich genannter Beginn liegt in der Zukunft.
-- Grauer Rahmen: Zeitstatus aus den gelieferten Angaben nicht zuverlässig bestimmbar.
-- Kein Browser-Push; akustische Warnungen bei geöffneter App bleiben erhalten.
-- Manuelle Autobahnwahl als Ausweichmöglichkeit, wenn Overpass ausfällt.
+- Das Symbol in der Kopfzeile ist direkt in index.html eingebettet und kann deshalb nicht mehr durch einen fehlenden icons-Pfad ausfallen.
+- Favicon, Apple-Touch-Icon und Manifest erhalten Versionsparameter, um alte Browser-Caches zu umgehen.
+- Service-Worker-Cache auf v7 aktualisiert.
+- Alle Funktionen aus V6 einschließlich Kategorienfilter bleiben erhalten.
 
-## Upload
-In https://github.com/DARKI-HS/verkehrsradar die Dateien im Repository-Stamm ersetzen, insbesondere `index.html` und `sw.js`. Alle übrigen Dateien und den Ordner `icons` beibehalten.
-Nach dem Commit https://darki-hs.github.io/verkehrsradar/?v=5 in Safari öffnen.
-Bei älterer installierter PWA: App schließen und neu öffnen; bei Bedarf Safari-Websitedaten/Cache prüfen.
+## GitHub-Upload
 
-## Grenzen
-Der Status aktuell/geplant wird aus Datumsangaben der API-Beschreibung abgeleitet und nicht extern verifiziert. Fehlende/uneindeutige Zeiträume bleiben grau. Live-Funktion auf dem iPhone wurde nicht getestet.
+Alle Dateien aus dem entpackten ZIP in das Hauptverzeichnis von `DARKI-HS/verkehrsradar` hochladen; den `icons`-Ordner mit den drei PNG-Dateien beibehalten. Besonders `index.html`, `sw.js`, `manifest.webmanifest` ersetzen. Anschließend `https://darki-hs.github.io/verkehrsradar/?v=7` in Safari aufrufen.
+
+Für das Symbol auf dem iPhone-Home-Bildschirm ggf. die alte Home-Bildschirm-Verknüpfung löschen und über Safari → Teilen → Zum Home-Bildschirm neu hinzufügen.
+
+Hinweis: GitHub-Veröffentlichung und iPhone-Darstellung sind nicht live getestet.
