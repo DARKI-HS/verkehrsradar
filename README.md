@@ -38,3 +38,12 @@
 
 ## Version ohne Push-Benachrichtigungen
 Diese Version enthält keine Browser-Push-Benachrichtigungen oder Berechtigungsabfragen. Akustische Warnungen für neue Staus und Unfälle sind bei geöffneter App weiterhin möglich.
+
+
+## Reparatur v3 – iPhone
+- Auf kleinen Bildschirmen stehen die Standort- und Aktualisieren-Schaltflächen vor der Karte, statt erst darunter.
+- Nach dem GPS-Tippen erscheint eine sichtbare Statusmeldung inklusive konkreter Fehlermeldung.
+- Alternativ kann der Standort durch Tippen auf die Deutschlandkarte ausgewählt werden.
+- Der Service-Worker-Cache ist auf v3 aktualisiert. Push-Benachrichtigungen sind nicht enthalten.
+- Ersetze bei GitHub alle gleichnamigen Dateien (insbesondere `index.html` und `sw.js`).
+- Die tatsächliche GPS-Funktion muss auf dem iPhone in Safari getestet werden.
