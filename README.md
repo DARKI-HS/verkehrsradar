@@ -1,12 +1,14 @@
-# VerkehrsRadar Deutschland V8
+# VerkehrsRadar Deutschland V9 – iPhone-Anpassung
 
-- Kompakte Schaltflächen oberhalb der Karte.
-- Kleinere feste Karte, Meldungenliste scrollt darunter separat.
-- Lange technische API-Fehler unter Einstellungen → Diagnose; kurze Statuszeile im Hauptbildschirm.
-- Marker werden bei geringer Zoomstufe gruppiert; antippen zoomt hinein.
-- Kategorienfilter bleiben vorhanden, horizontal scrollbar.
-- Keine Push-Benachrichtigungen.
+- Drei kompakte Schaltflächen über der Karte, ohne überlappende Beschriftungen.
+- Sechs Kategorienfilter vollständig sichtbar in zwei Reihen mit je drei Buttons.
+- TomTom-Abfragen verwenden `timeValidityFilter=present`; diese Meldungen werden rot als „Aktuell laut TomTom“ gekennzeichnet. Dies ist die Aussage der Datenquelle, keine unabhängige Bestätigung.
+- Eindeutig künftig beginnende Meldungen bleiben gelb, unklare Zeiträume grau.
+- Karte oben fixiert, Meldungsliste darunter separat scrollbar.
+- Einstellungen, GPS, TomTom und App-Symbol bleiben erhalten. Keine Push-Benachrichtigungen.
 
-GitHub Pages: Alle Dateien in den Repository-Stamm hochladen, vorhandene gleichnamige Dateien ersetzen. Danach https://darki-hs.github.io/verkehrsradar/?v=8 in Safari öffnen.
+## Upload
+Alle Dateien und den Ordner `icons` in das bestehende GitHub-Pages-Repository hochladen und vorhandene Dateien ersetzen. Insbesondere `index.html` und `sw.js` aktualisieren. Danach `https://darki-hs.github.io/verkehrsradar/?v=9` in Safari öffnen.
 
-Die Funktion auf iPhone wurde nicht live getestet.
+## Prüfung
+JavaScript-Syntax geprüft. Tatsächliche iPhone-Darstellung und Live-API-Antworten sind nicht vor Ort getestet.
