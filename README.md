@@ -1,14 +1,12 @@
-# VerkehrsRadar Deutschland V7 – Symbol-Reparatur
+# VerkehrsRadar Deutschland V8
 
-- Das Symbol in der Kopfzeile ist direkt in index.html eingebettet und kann deshalb nicht mehr durch einen fehlenden icons-Pfad ausfallen.
-- Favicon, Apple-Touch-Icon und Manifest erhalten Versionsparameter, um alte Browser-Caches zu umgehen.
-- Service-Worker-Cache auf v7 aktualisiert.
-- Alle Funktionen aus V6 einschließlich Kategorienfilter bleiben erhalten.
+- Kompakte Schaltflächen oberhalb der Karte.
+- Kleinere feste Karte, Meldungenliste scrollt darunter separat.
+- Lange technische API-Fehler unter Einstellungen → Diagnose; kurze Statuszeile im Hauptbildschirm.
+- Marker werden bei geringer Zoomstufe gruppiert; antippen zoomt hinein.
+- Kategorienfilter bleiben vorhanden, horizontal scrollbar.
+- Keine Push-Benachrichtigungen.
 
-## GitHub-Upload
+GitHub Pages: Alle Dateien in den Repository-Stamm hochladen, vorhandene gleichnamige Dateien ersetzen. Danach https://darki-hs.github.io/verkehrsradar/?v=8 in Safari öffnen.
 
-Alle Dateien aus dem entpackten ZIP in das Hauptverzeichnis von `DARKI-HS/verkehrsradar` hochladen; den `icons`-Ordner mit den drei PNG-Dateien beibehalten. Besonders `index.html`, `sw.js`, `manifest.webmanifest` ersetzen. Anschließend `https://darki-hs.github.io/verkehrsradar/?v=7` in Safari aufrufen.
-
-Für das Symbol auf dem iPhone-Home-Bildschirm ggf. die alte Home-Bildschirm-Verknüpfung löschen und über Safari → Teilen → Zum Home-Bildschirm neu hinzufügen.
-
-Hinweis: GitHub-Veröffentlichung und iPhone-Darstellung sind nicht live getestet.
+Die Funktion auf iPhone wurde nicht live getestet.
