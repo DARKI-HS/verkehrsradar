@@ -1,14 +1,14 @@
-# VerkehrsRadar Deutschland V9 – iPhone-Anpassung
+# VerkehrsRadar Deutschland – V10 iPhone-Icon-Fix
 
-- Drei kompakte Schaltflächen über der Karte, ohne überlappende Beschriftungen.
-- Sechs Kategorienfilter vollständig sichtbar in zwei Reihen mit je drei Buttons.
-- TomTom-Abfragen verwenden `timeValidityFilter=present`; diese Meldungen werden rot als „Aktuell laut TomTom“ gekennzeichnet. Dies ist die Aussage der Datenquelle, keine unabhängige Bestätigung.
-- Eindeutig künftig beginnende Meldungen bleiben gelb, unklare Zeiträume grau.
-- Karte oben fixiert, Meldungsliste darunter separat scrollbar.
-- Einstellungen, GPS, TomTom und App-Symbol bleiben erhalten. Keine Push-Benachrichtigungen.
+Diese Version enthält zusätzlich eine Apple-Touch-Icon-Datei im Hauptverzeichnis (`apple-touch-icon.png`) und aktualisierte iOS-Icon-Verweise. Alle Funktionen der V9 bleiben erhalten.
 
-## Upload
-Alle Dateien und den Ordner `icons` in das bestehende GitHub-Pages-Repository hochladen und vorhandene Dateien ersetzen. Insbesondere `index.html` und `sw.js` aktualisieren. Danach `https://darki-hs.github.io/verkehrsradar/?v=9` in Safari öffnen.
+## GitHub-Upload
+Alle Dateien und den Ordner `icons` im Repository-Stamm aktualisieren, insbesondere `index.html`, `sw.js`, `manifest.webmanifest` und die neue Datei `apple-touch-icon.png`.
 
-## Prüfung
-JavaScript-Syntax geprüft. Tatsächliche iPhone-Darstellung und Live-API-Antworten sind nicht vor Ort getestet.
+## iPhone
+1. Safari öffnen: https://darki-hs.github.io/verkehrsradar/?v=10
+2. Bestehende VerkehrsRadar-Verknüpfung vom Home-Bildschirm entfernen (nur Verknüpfung entfernen, nicht GitHub-Dateien löschen).
+3. In Safari Teilen → Zum Home-Bildschirm → Hinzufügen.
+4. Wenn das Symbol weiter fehlt, in Safari die direkte URL https://darki-hs.github.io/verkehrsradar/apple-touch-icon.png öffnen und prüfen, ob das Bild angezeigt wird.
+
+Die Funktion auf einem echten iPhone ist nicht unabhängig getestet.
