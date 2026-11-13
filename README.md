@@ -47,3 +47,12 @@ Diese Version enthält keine Browser-Push-Benachrichtigungen oder Berechtigungsa
 - Der Service-Worker-Cache ist auf v3 aktualisiert. Push-Benachrichtigungen sind nicht enthalten.
 - Ersetze bei GitHub alle gleichnamigen Dateien (insbesondere `index.html` und `sw.js`).
 - Die tatsächliche GPS-Funktion muss auf dem iPhone in Safari getestet werden.
+
+## Version 4 – Autobahn-API-Diagnose
+- Autobahn-Endpunkte entsprechen der dokumentierten API.
+- Drei Overpass-Server werden nacheinander für die Erkennung naher Autobahnen versucht.
+- Manuelle Autobahnnummern (z. B. A9, A14, A38) ermöglichen den Abruf ohne Overpass.
+- Status zeigt Autobahnen, Rohmeldungen, gültige Koordinaten und API-Fehler.
+- Nur Meldungen mit Koordinaten im eingestellten Radius werden angezeigt.
+- Keine Push-Benachrichtigungen.
+- Ersetzt auf GitHub mindestens index.html und sw.js.
